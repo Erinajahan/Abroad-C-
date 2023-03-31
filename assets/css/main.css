@@ -471,18 +471,42 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/cards-4.jpg") top center;
+  
   background-size: cover;
   position: relative;
   padding: 120px 0;
   z-index: 3;
 }
+#myVideo {
+  /* Style the video: 100% width and height to cover the entire window */
+ opacity: 0.1;
+  position: fixed;
+  padding: 120px 0;
+  min-width: 50%;
+  min-height: 100vh;
+  z-index: 3;
+  background-size: cover;
+  position:absolute;
+
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  
+  bottom: 0;
+  background: rgb(250, 249, 249);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
 
 @media (min-width: 1034px) {
   .hero:after {
     position: absolute;
     content: "";
-    width: 40%;
+    width: 100%;
     background: linear-gradient( rgb(63, 125, 207) , black  );
     top: 0;
     bottom: 0;
@@ -532,21 +556,24 @@ section {
   margin: 40px 0;
 }
 
-.hero .btn-get-started {
+.btn-get-started {
   font-family: var(--font-secondary);
   font-weight: 900;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 30px;
-  border-radius: 50px;
+  
   transition: 0.5s;
   color: #fff;
-  background:rgb(34, 76, 167);
+  background:rgb(46 62 98);
+  margin-bottom: 40px;
+ 
+
 }
 
-.hero .btn-get-started:hover {
-  background: linear-gradient(rgb(81, 98, 197), rgb(23, 109, 23) )
+.btn-get-started:hover {
+  background: linear-gradient(rgb(91, 125, 199), rgb(9, 29, 9) )
 }
 
 
@@ -704,7 +731,7 @@ section {
 }
 
 .services-list .service-item .title a {
-  color: var(--color-secondary);
+  color:  #acb9c8
 }
 
 .services-list .service-item .title a:hover {
@@ -948,7 +975,7 @@ section {
   display: inline-block;
   width: 32px;
   height: 32px;
-  color: rgba(27, 47, 69, 0.5);
+  color: rgb(96, 157, 218);
   margin-right: 10px;
   transition: 0.3s;
   display: flex;
@@ -960,13 +987,13 @@ section {
 }
 
 .footer .footer-content .social-links a:hover {
-  background-color: #38618e;
+  background-color: #598dc5;
 }
 
 .footer .footer-content h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #29486a;
+  color: #5385b9;
   position: relative;
   padding-bottom: 12px;
 }
@@ -999,7 +1026,7 @@ section {
 }
 
 .footer .footer-content .footer-links ul a {
-  color: #31547c;
+  color: #3a6291;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1011,7 +1038,7 @@ section {
 
 .footer .footer-content .footer-contact p {
   line-height: 26px;
-  color: var(--color-secondary);
+  color: rgb(94, 132, 189);
 }
 
 .footer .footer-legal {
@@ -1028,5 +1055,5 @@ section {
   padding-top: 4px;
   text-align: center;
   font-size: 13px;
-  color: var(--color-secondary);
+  color: rgb(86, 146, 214);
 }
